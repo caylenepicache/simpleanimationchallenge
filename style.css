@@ -15,10 +15,36 @@ body {
     padding: 50px 0;
     line-height: 0;
     margin: 60px auto;
-    background: pink;
-    color: white;
+    background: gold;
+    color: darkgray;
     border-radius: 50px;
     cursor: pointer;
-    transition: 1s;
+  }
+
+  #scaleUp {
+    animation: scaleUp;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: ease;
   }
   
+  #scaleDown {
+    animation: scaleUp;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+  }
+
+  /*animations*/
+  @keyframes scaleUp {
+      from {
+          transform: translateY(0px);
+      }
+      to {
+          transform: translateY(-75px);
+      }
+  }
+
+
