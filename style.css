@@ -37,6 +37,14 @@ body {
     animation-timing-function: ease;
   }
 
+  #contRot {
+      animation: continuousRotate;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-timing-function: ease-in-out;
+      animation-duration: 5s;
+  }
+
   /*animations*/
   @keyframes scaleUp {
       from {
@@ -47,4 +55,14 @@ body {
       }
   }
 
+
+  @keyframes continuousRotate {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
 
