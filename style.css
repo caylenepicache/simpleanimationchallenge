@@ -52,6 +52,14 @@ body {
       animation-timing-function: ease-in-out;
       animation-duration: 5s;
  }
+
+ #flip {
+     animation: flip;
+     animation-iteration-count: infinite;
+     animation-direction: normal;
+     animation-timing-function: ease-in-out;
+     animation-duration: 5s;
+ }
   /*animations*/
   @keyframes scaleUp {
       from {
@@ -61,6 +69,7 @@ body {
           transform: translateY(-75px);
       }
   }
+
 
 
   @keyframes continuousRotate {
@@ -79,5 +88,14 @@ body {
         }
         to {
             transform: rotate(180deg) scale(1.5);
+        }
+    }
+
+    @keyframes flip{
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(180deg);
         }
     }
