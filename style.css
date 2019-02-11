@@ -45,6 +45,13 @@ body {
       animation-duration: 5s;
   }
 
+  #RotScaleU {
+      animation: rotScaleUp;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-timing-function: ease-in-out;
+      animation-duration: 5s;
+ }
   /*animations*/
   @keyframes scaleUp {
       from {
@@ -65,4 +72,12 @@ body {
       }
     }
   
+    @keyframes rotScaleUp {
+        from {
+            transform: rotate(0deg) scale(1);
 
+        }
+        to {
+            transform: rotate(180deg) scale(1.5);
+        }
+    }
