@@ -21,7 +21,7 @@ body {
     cursor: pointer;
   }
 
-  #scaleUp {
+  #scaleUp, #SlideUpDown{
     animation: scaleUp;
     animation-iteration-count: infinite;
     animation-direction: alternate;
